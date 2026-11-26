@@ -41,6 +41,7 @@ const printer=(event)=>{
   {
    result.innerHTML="Result : "+" Match draw"
     computertext.innerHTML='Computer choose - '+ `${playerchoice}` 
+       document.getElementById("refresh").innerHTML="Try Again"
      game.removeEventListener('click',printer)
      return;
   }
@@ -50,6 +51,7 @@ const printer=(event)=>{
     result.innerHTML="Result : "+" YOU WIN"
    celebrateWin()
     computertext.innerHTML='Computer choose - '+ `${computer[z]}`
+    document.getElementById("refresh").innerHTML="Try Again"
      game.removeEventListener('click',printer)
     
     return;
@@ -60,6 +62,7 @@ const printer=(event)=>{
      result.innerHTML="Result : "+" COMPUTER WIN"
       computertext.innerHTML='Computer choose - '+ `${computer[z]}`
        game.removeEventListener('click',printer)
+    document.getElementById("refresh").innerHTML="Try Again"
        updatescore()
        return;
   }
