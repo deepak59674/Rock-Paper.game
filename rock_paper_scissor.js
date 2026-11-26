@@ -75,6 +75,7 @@ refresh.addEventListener('click',(event)=>{
   
     result.innerHTML="Result : "+""
     computertext.innerHTML='Computer choose '+ ``
+     document.getElementById("refresh").innerHTML="Refresh"
     game.addEventListener('click',printer)
 })
 
